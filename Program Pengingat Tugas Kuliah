@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int tanggal_fisika = 6, tanggal_kalkulus = 7, tanggal_pemrograman = 13, tanggal_bahasa = 14, tanggal_vektor = 19;
+    char bulan[10] = "November";
+    int matkul;
+    string tugas_fisika, tugas_kalkulus, tugas_pemrograman, tugas_bahasa, tugas_vektor;
+    
+    cout<<"Selamat Datang di program pengingat tugas kuliah"<<endl;
+    cout<<"\nDaftar nama mata kuliah:"<<endl;
+    cout<<"1. Fisika FFKG\n2. Kalkulus Variabel Jamak\n3. Pemrograman Dasar\n4. Bahasa Indonesia dan Penulisan Ilmiah\n5. Teori Vektor dan Matriks"<<endl;
+    cout<<"\nMasukkan nomor matkul: ";
+    cin>>matkul;
+    
+    if(matkul == 1)
+    {
+        tugas_fisika = "Hukum Kepler 2";
+        cout<<endl<<"Nama tugas: "<<tugas_fisika<<endl;
+        cout<<endl<<"Batas pengumpulan tugas: "<<tanggal_fisika<<" "<<bulan<<" 2021"<<endl;
+    }
+    else if (matkul==2)
+    {
+        tugas_kalkulus = "Mengerjakan soal vektor dan matriks cross product";
+        cout<<endl<<"Nama tugas: "<<tugas_kalkulus<<endl;
+        cout<<endl<<"Batas pengumpulan tugas: "<<tanggal_kalkulus<<" "<<bulan<<" 2021"<<endl;
+    }
+    else if(matkul==3)
+    {
+        tugas_pemrograman = "Contoh program dengan menggunakan tipe data";
+        cout<<endl<<"Nama tugas: "<<tugas_pemrograman<<endl;
+        cout<<endl<<"Batas pengumpulan tugas: "<<tanggal_pemrograman<<" "<<bulan<<" 2021"<<endl;
+    }
+    else if(matkul==4)
+    {
+        tugas_bahasa = "Membuat laporan percobaan sederhana";
+        cout<<endl<<"Nama tugas: "<<tugas_bahasa<<endl;
+        cout<<endl<<"Batas pengumpulan tugas: "<<tanggal_bahasa<<" "<<bulan<<" 2021"<<endl;
+    }
+    else if(matkul==5)
+    {
+        tugas_vektor = "Mengerjakan tugas dot product dan length of a vector";
+        cout<<endl<<"Nama tugas: "<<tugas_vektor<<endl;
+        cout<<endl<<"Batas pengumpulan tugas: "<<tanggal_vektor<<" "<<bulan<<" 2021"<<endl;
+    }
+    return 0;
+}
